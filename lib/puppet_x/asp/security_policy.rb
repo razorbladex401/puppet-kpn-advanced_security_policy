@@ -1377,6 +1377,14 @@ class AdvancedSecurityPolicy
         reg_type:       'DWORD',
         data_type:      'string',
       },
+      'Require use of specific security layer for remote (RDP) connections' => {
+        name:           'SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\SecurityLayer',
+        configuration:  'Computer',
+        registry_key:   'Software\Policies\Microsoft\Windows NT\Terminal Services',
+        value_name:     'SecurityLayer',
+        reg_type:       'DWORD',
+        data_type:      'string',
+      },
       'Set time limit for active but idle Remote Desktop Services sessions' => {
         name:           'Software\Policies\Microsoft\Windows NT\Terminal Services\MaxIdleTime',
         configuration:  'Computer',

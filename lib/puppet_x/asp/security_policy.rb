@@ -1340,7 +1340,7 @@ class AdvancedSecurityPolicy
         name:           'Software\Policies\Microsoft\Windows NT\Terminal Services\fDisableTerminalServerTooltip',
         configuration:  'Computer',
         registry_key:   'Software\Policies\Microsoft\Windows NT\Terminal Services',
-        value_name:     'fDisableClip',
+        value_name:     'fDisableTerminalServerTooltip',
         reg_type:       'DWORD',
         data_type:      'boolean',
         enabled_value:  '1',

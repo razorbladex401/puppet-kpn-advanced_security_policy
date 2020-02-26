@@ -1319,6 +1319,33 @@ class AdvancedSecurityPolicy
         enabled_value:  '1',
         disabled_value: '0',
       },
+      'Use the specified Remote Desktop license servers' => {
+        name:           'Software\Policies\Microsoft\Windows NT\Terminal Services\LicenseServers',
+        configuration:  'Computer',
+        registry_key:   'Software\Policies\Microsoft\Windows NT\Terminal Services',
+        value_name:     'LicenseServers',
+        reg_type:       'SZ',
+        data_type:      'string',
+      },
+	  # Licensing mode: Per Device = 2 or Per User = 4
+      'Set the Remote Desktop licensing mode' => {
+        name:           'Software\Policies\Microsoft\Windows NT\Terminal Services\LicensingMode',
+        configuration:  'Computer',
+        registry_key:   'Software\Policies\Microsoft\Windows NT\Terminal Services',
+        value_name:     'LicensingMode',
+        reg_type:       'DWORD',
+        data_type:      'string',
+      },
+      'Hide notification about RD Licensing problems that affect the RD Session Host server' => {
+        name:           'Software\Policies\Microsoft\Windows NT\Terminal Services\fDisableTerminalServerTooltip',
+        configuration:  'Computer',
+        registry_key:   'Software\Policies\Microsoft\Windows NT\Terminal Services',
+        value_name:     'fDisableClip',
+        reg_type:       'DWORD',
+        data_type:      'boolean',
+        enabled_value:  '1',
+        disabled_value: '0',
+      },
       'Do not allow Clipboard redirection' => {
         name:           'Software\Policies\Microsoft\Windows NT\Terminal Services\fDisableClip',
         configuration:  'Computer',

@@ -26,6 +26,16 @@ class AdvancedSecurityPolicy
 
   def self.asp_mapping
     @asp_mapping ||= {
+      'Allow users to enable online speech recognition services' => {
+        name:           'Software\Policies\Microsoft\InputPersonalization',
+        configuration:  'Computer',
+        registry_key:   'Software\Policies\Microsoft\Windows\Personalization',
+        value_name:     'AllowInputPersonalization',
+        reg_type:       'DWORD',
+        data_type:      'boolean',
+        enabled_value:  '1',
+        disabled_value: '0',
+      },
       'Prevent enabling lock screen camera' => {
         name:           'Software\Policies\Microsoft\Windows\Personalization\NoLockScreenCamera',
         configuration:  'Computer',
